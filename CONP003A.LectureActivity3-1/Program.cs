@@ -1,0 +1,41 @@
+﻿// Author: [Alvaro Pulido]
+// Course: COMP-003A
+// Faculty: Jonathan Cruz
+// Purpose: Demonstarte selection statements in C#.
+namespace CONP003A.LectureActivity3_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Selection Statements Demo!");
+
+            // Prompt for the current hour
+            Console.Write("Enter the current hour (0-23): ");
+            int hour = int.Parse(Console.ReadLine());
+
+            // Determine time of day
+            // Condition 1: From 5 to 11
+            // Condition 2: From 12 to 17
+            // Condition 3: From 18 to 20
+            // Condition 4: From 21 to 24
+            if (hour >= 5 && hour <= 11)
+
+                Console.WriteLine("Good Morning!");
+
+            else if (hour >= 12 && hour <= 17)
+
+                Console.WriteLine("Good Afternoon");
+
+            else if (hour >= 18 && hour <= 20)
+
+                Console.WriteLine("Good Evening!");
+
+            else
+            {
+                Console.WriteLine("Good Night!");
+            }
+
+        }
+    }
+}
